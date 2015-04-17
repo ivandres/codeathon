@@ -1,0 +1,22 @@
+<div class=modal am-fade-and-scale tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="$hide()">×</button>
+                <h4 class="modal-title">Bootstrap</h4>
+            </div>
+            <div class="modal-body">
+                <p>Bootstrap is a HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+
+                <p>Bootstrap & JavaScript require JQuery. With Angular, the DOM (Document Object Model) is abstracted away from the developer - <strong>JQuery shouldn't be used!</strong></p>
+                <p><i>Unless we're talking Angular 2.0, but that's a different story</i></p>
+
+                <p>We use <a href="http://mgcrea.github.io/angular-strap/">angular-strap</a> instead. Angular strap provides angular directives (see Component section for more details) for bootstrap components. It's what made this modal!</p>
+                
+                <p> Click on the background to return to the main application! </p>
+            </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+</div>

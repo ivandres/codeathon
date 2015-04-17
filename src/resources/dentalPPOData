@@ -1,0 +1,242 @@
+{
+  "DPPO Plan": {
+    "In-Network": {
+      "Annual Deductible": {
+        "individual": 100,
+        "family": 300,
+        "text": "$100/$300"
+      },
+      "Annual Maximum Benefits":{
+        "value": 1000,
+        "text": "$1000 per individual"
+      },
+      "Lifetime Orthodontia Benefit Maximum":{
+        "value": 1000,
+        "text": "$1000 per individual"
+      },
+      "Preventive Care":{
+        "Exams":{
+          "value": 80,
+          "text": "80% deductible waived"
+        },
+        "Bitewing X-rays":{
+          "value": 80,
+          "text": "80% deductible waived"
+        },
+        "Cleanings":{
+          "value": 80,
+          "text": "80% deductible waived"
+        },
+        "Fluoride treatments":{
+          "value": 80,
+          "text": "80% deductible waived"
+        },
+        "Sealants":{
+          "value": 80,
+          "text": "80% deductible waived"
+        },
+        "Space Maintainers":{
+          "value": 80,
+          "text": "80% deductible waived"
+        }
+      },
+      "Minor Restorative":{
+        "Full Mouth X-rays":{
+          "value": 60,
+          "text": "60% covered after deductible"
+        },
+        "Panoramic X-rays":{
+          "value": 60,
+          "text": "60% covered after deductible"
+        },
+        "Emergency Care":{
+          "value": 60,
+          "text": "60% covered after deductible"
+        },
+        "Fillings":{
+          "value": 60,
+          "text": "60% covered after deductible"
+        },
+        "Routine Extractions":{
+          "value": 60,
+          "text": "60% covered after deductible"
+        },
+        "Surgical Extraction of Erupted Tooth":{
+          "value": 60,
+          "text": "60% covered after deductible"
+        }
+      },
+      "Major Restorative":{
+        "Endodontics":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Periodontics":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Gingivoplasty or gingivectomy":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Osseous Surgery":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Oral Surgery":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Inlays/onlays":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Crowns":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Dentures":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Bridges":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        }
+      },
+      "Orthodontia":{
+        "value": 50,
+        "text": "50% deductible waived"
+      },
+      "Dental Implants":{
+        "text": "Not covered"
+      },
+      "TMJ":{
+        "text": "Not covered"
+      },
+      "Premium/Price":{
+        "value": 3,
+        "text": "$$$"
+      }
+    },
+    "Out-of-Network": {
+      "Annual Deductible": {
+        "individual": 100,
+        "family": 300,
+        "text": "$100/$300"
+      },
+      "Annual Maximum Benefits":{
+        "value": 1000,
+        "text": "$1000 per individual"
+      },
+      "Lifetime Orthodontia Benefit Maximum":{
+        "value": 1000,
+        "text": "$1000 per individual"
+      },
+      "Preventive Care":{
+        "Exams":{
+          "value": 60,
+          "text": "60% deductible waived"
+        },
+        "Bitewing X-rays":{
+          "value": 60,
+          "text": "60% deductible waived"
+        },
+        "Cleanings":{
+          "value": 60,
+          "text": "60% deductible waived"
+        },
+        "Fluoride treatments":{
+          "value": 60,
+          "text": "60% deductible waived"
+        },
+        "Sealants":{
+          "value": 60,
+          "text": "60% deductible waived"
+        },
+        "Space Maintainers":{
+          "value": 60,
+          "text": "60% deductible waived"
+        }
+      },
+      "Minor Restorative":{
+        "Full Mouth X-rays":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Panoramic X-rays":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Emergency Care":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Fillings":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Routine Extractions":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        },
+        "Surgical Extraction of Erupted Tooth":{
+          "value": 50,
+          "text": "50% covered after deductible"
+        }
+      },
+      "Major Restorative":{
+        "Endodontics":{
+          "value": 40,
+          "text": "40% covered after deductible"
+        },
+        "Periodontics":{
+          "value": 40,
+          "text": "40% covered after deductible"
+        },
+        "Gingivoplasty or gingivectomy":{
+          "value": 40,
+          "text": "40% covered after deductible"
+        },
+        "Osseous Surgery":{
+          "value": 40,
+          "text": "40% covered after deductible"
+        },
+        "Oral Surgery":{
+          "value": 40,
+          "text": "40% covered after deductible"
+        },
+        "Inlays/onlays":{
+          "value": 40,
+          "text": "40% covered after deductible"
+        },
+        "Crowns":{
+          "value": 40,
+          "text": "40% covered after deductible"
+        },
+        "Dentures":{
+          "value": 40,
+          "text": "40% covered after deductible"
+        },
+        "Bridges":{
+          "value": 40,
+          "text": "40% covered after deductible"
+        }
+      },
+      "Orthodontia":{
+        "value": 50,
+        "text": "50% deductible waived"
+      },
+      "Dental Implants":{
+        "text": "Not covered"
+      },
+      "TMJ":{
+        "text": "Not covered"
+      },
+      "Premium/Price":{
+        "value": 3,
+        "text": "$$$"
+      }
+    }
+  }
+}

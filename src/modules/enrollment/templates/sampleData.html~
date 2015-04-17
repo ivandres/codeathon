@@ -1,0 +1,32 @@
+<h3 ng-bind="message"></h3><br>
+
+<div class="input-group">
+   <span class="input-group-addon">
+      <input type="checkbox" ng-model="healthDataCheck">
+   </span>
+      <input type="text" class="form-control"placeholder="Health Data" aria-label="...">
+   <span class="input-group-addon">
+      <input type="checkbox" ng-model="dentalPPODataCheck">
+   </span>
+      <input type="text" class="form-control"placeholder="Dental PPO Data" aria-label="...">
+   <span class="input-group-addon">
+      <input type="checkbox" ng-model="dentalDHMODataCheck">
+   </span>
+      <input type="text" class="form-control"placeholder="Dental DHMO Data" aria-label="...">
+</div><!-- /input-group -->
+
+
+<div class="check-element animate-hide" ng-show="healthDataCheck">
+ 	{{healthData | json}}
+</div>
+
+<div class="check-element animate-hide" ng-show="dentalPPODataCheck">
+ 	{{dentalPPOData | json}}
+</div>
+
+<div class="check-element animate-hide" ng-show="dentalDHMODataCheck">
+ 	{{dentalDHMOData | json}}
+</div>
+
+
+

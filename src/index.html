@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org/">
+<!--[if lt IE 7]>      <html lang="en" ng-app="ngApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="ngApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="ngApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="ngApp" class="no-js"> <!--<![endif]-->
+
+<head>
+    <title>Single Page Web Application with AngularJS</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="content/styles/style.css" media="screen" />
+
+    <!--Get Angular from google's CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.min.js"></script>
+
+    <!--From Bootstraps CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!--Instead of the Bootstrap JS which is dependent on JQuery, use Angular-Strap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.2.1/angular-strap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.2/angular-strap.tpl.min.js"></script>
+
+
+    <!--load your modules-->
+    <script src="modules/app/AppModule.js"></script>
+    <script src="modules/example/exampleModule.js"></script>
+    <script src="modules/enrollment/enrollmentModule.js"></script>
+</head>
+
+<body>
+<div ng-controller="appController" class="container">
+    <div class="container">
+        <div class="masthead">
+            <h3 class="text-muted">Angular Starter App</h3>
+        </div>
+        <nav class="navbar navbar-default" role="navigation" bs-navbar>
+            <div class="navbar-header">
+                <img class="navbar-brand" src="content/images/logo-cigna.jpg">
+            </div>            
+            <ul class="nav navbar-nav">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#/example1">Example: Partial One </a></li>
+                <li><a href="#/example2">Example: Partial Two</a></li>
+                <li><a href="#/enrollment" >Sample Data & Services</a></li>
+        		</ul>
+        </nav>
+        
+        <div class="main-view" ng-view></div>
+        <!--This is where angular will add in the correct html partial and bind it to the controller-->
+        <!--based off the routes in the config-->
+    </div>
+</div>
+</body>
+</html>
+3

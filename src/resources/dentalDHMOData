@@ -1,0 +1,25 @@
+{
+  "DHMO Plan": {
+    "In-Network Only": {
+      "Patient Charge Schedule": "K1-V9",
+      "Office Copayment": {
+        "value": 5,
+        "text": "$5"
+      },
+      "Coinsurance Equivalency": {
+        "value": [100,80,50,50],
+        "text": "100/80/50/50"
+      },
+      "Annual Deductible (Individual/Family)": "N/A",
+      "Annual Maximum Benefits (Excludes Orthodontia)": "N/A",
+      "Lifetime Orthodontia Benefit Maximum (IN/OON)": "N/A",
+      "Orthodontia Benefit Child and Adult": "Covered",
+      "Implants": "No",
+      "TMJ": "Covered",
+      "Premium/Price": {
+        "value": 1,
+        "text": "$"
+      }
+    }
+  }
+}

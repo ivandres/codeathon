@@ -1,0 +1,221 @@
+{
+  "Open Access Plus - No Deductible": {
+    "In-Network": {
+      "Physician": {
+        "individual": 20,
+        "family": 40,
+        "text": "$20/$40"
+      },
+      "Plan Deductible" : {
+        "individual": 0,
+        "family": 0,
+        "text": "$0 Individual/$0 Family"
+      },
+      "Plan Coinsurance": {
+        "value": 100,
+        "text": "100%"
+      },
+      "Plan Out-of-Pocket (OOP)": {
+        "individual": 500,
+        "family": 1000,
+        "text": "$500 Individual/$1,000 Family"
+      },
+      "Preventive Care Services": {
+        "value": 100,
+        "text": "100%"
+      },
+      "Inpatient Facility": {
+        "deductible": 250,
+        "coinsurance": 100,
+        "text": "$250 per admission then 100%"
+      },
+      "Outpatient Facility": {
+        "deductible": 125,
+        "coinsurance": 100,
+        "text": "$125 per admission then 100%"
+      },
+      "Urgent Care": {
+        "value": 50,
+        "text": "$50"
+      },
+      "Emergency Room": {
+        "value": 100,
+        "text": "$100"
+      },
+      "Premium" : {
+        "value" : 3,
+        "text" : "$$$"
+      }
+    },
+    "Non-Network": {
+      "Physician": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Plan Deductible": {
+        "individual": 500,
+        "family": 1000,
+        "text": "$500 Individual/$1,000 Family"
+      },
+      "Plan Coinsurance":  {
+        "value": 80,
+        "text": "80%"
+      },
+      "Plan Out-of-Pocket (OOP)": {
+        "individual": 1000,
+        "family": 2000,
+        "text": "$1,000 Individual/$2,000 Family"
+      },
+      "Preventive Care Services": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Inpatient Facility": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Outpatient Facility": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Urgent Care": {
+        "value": 50,
+        "text": "$50"
+      },
+      "Emergency Room": {
+        "value": 100,
+        "text": "$100"
+      },
+      "Premium" : {
+        "value" : 3,
+        "text" : "$$$"
+      }
+    }
+  },
+  "Open Access Plus - 1500 Deductible": {
+    "In-Network": {
+      "Physician": {
+        "individual": 25,
+        "family": 50,
+        "text": "$25/$50"
+      },
+      "Plan Deductible": {
+        "individual": 1500,
+        "family": 3000,
+        "text": "$1500 Individual/$3,000 Family"
+      },
+      "Plan Coinsurance":  {
+        "value": 80,
+        "text": "80%"
+      },
+      "Plan Out-of-Pocket (OOP)": {
+        "individual": 3000,
+        "family": 6000,
+        "text": "$3,000 Individual/$6,000 Family"
+      },
+      "Preventive Care Services": {
+        "value": 100,
+        "text": "100%"
+      },
+      "Inpatient Facility": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Outpatient Facility": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Urgent Care": {
+        "value": 75,
+        "text": "$75"
+      },
+      "Emergency Room": {
+        "value": 150,
+        "text": "$150"
+      },
+      "Premium" : {
+        "value" : 2,
+        "text" : "$$"
+      }
+    },
+    "Non-Network": {
+      "Physician": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Plan Deductible": {
+        "individual": 3000,
+        "family": 6000,
+        "text": "$3000 Individual/$6,000 Family"
+      },
+      "Plan Coinsurance":  {
+        "value": 60,
+        "text": "60%"
+      },
+      "Plan Out-of-Pocket (OOP)": {
+        "individual": 6000,
+        "family": 12000,
+        "text": "$6,000 Individual/$12,000 Family"
+      },
+      "Preventive Care Services": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Inpatient Facility": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Outpatient Facility": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Urgent Care": {
+        "value": 75,
+        "text": "$75"
+      },
+      "Emergency Room": {
+        "value": 150,
+        "text": "$150"
+      },
+      "Premium" : {
+        "value" : 2,
+        "text" : "$$"
+      }
+    }
+  },
+  "Open Access Plus In-Network Only - 1500 Deductible": {
+    "In-Network": {
+      "Physician": {
+        "individual": 25,
+        "family": 50,
+        "text": "$25/$50"
+      },
+      "Plan Deductible": {
+        "individual": 1500,
+        "family": 3000,
+        "text": "$1500 Individual/$3,000 Family"
+      },
+      "Plan Coinsurance":  {
+        "value": 80,
+        "text": "80%"
+      },
+      "Plan Out-of-Pocket (OOP)": {
+        "individual": 3000,
+        "family": 6000,
+        "text": "$3,000 Individual/$6,000 Family"
+      },
+      "Preventive Care Services": {
+        "value": 100,
+        "text": "100%"
+      },
+      "Inpatient Facility": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Outpatient Facility": {
+        "text": "Deductible/Coinsurance"
+      },
+      "Urgent Care": {
+        "value": 75,
+        "text": "$75"
+      },
+      "Emergency Room": {
+        "value": 150,
+        "text": "$150"
+      },
+      "Premium" : {
+        "value" : 1,
+        "text" : "$"
+      }
+    }
+  }
+}

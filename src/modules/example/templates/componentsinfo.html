@@ -1,0 +1,41 @@
+<div class="modal am-fade-and-scale" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="$hide()">×</button>
+                <h4 class="modal-title">Angular Components</h4>
+            </div>
+            <div class="modal-body">
+                <h5>A Controller...</h5>
+                <ul>
+                    <li>is used to set up the initial state of the $scope and add behavior to it.</li>
+                    <li>shouldn't try to do too much. It should only apply business logic for a single view.</li>
+                    <li>manages $scope properties and makes them available to a HTML template where the controller is registered using the ng-controller directive. Where it is registered, Angular will instantiate a new Controller object.
+                    </li>
+                </ul>
+                <h5>A Directive...</h5>
+                <ul>
+                    <li>contains  specific behavior to manipulate a custom DOM element.</li>
+                    <li>is used to separate DOM manipulation from the views and assign reusable functionality to elements.
+                    </li>
+                    <li>is a standalone reusable component that can be safe and easy to add any number of times throughout the application. It is added to the HTML as an element or attribute.
+                    </li>
+                    <li>reduces redundant code by isolating data for specific instances. If it has a scope, it is not meant to be shared. Otherwise it inherits the scope of its parent. It can have associated HTML templates where it replaces it's own specific instances information, reducing redundancy in the HTML.
+                    </li>
+                </ul>
+                <h5>A Service...</h5>
+                <ul>
+                    <li>contains reusable business logic independent of views.</li>
+                    <li>is used when you need to share data across different components.
+                    </li>
+                    <li>is a singleton,  it is created once and injected as a dependency when needed.</li>
+                    <li>ensures you are dealing with the correct data by managing its access and modification throughout the application.</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+

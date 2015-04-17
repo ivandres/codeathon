@@ -1,0 +1,8 @@
+node_modules/
+.idea
+*.iml
+.editorconfig
+.jshintrc
+target/
+node/
+build

@@ -1,0 +1,24 @@
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        $scope.message:
+        <strong><span ng-bind="message"></span></strong>
+    </div>
+    <div class="panel-body">
+        <p>The $scope of this controller prototypally inherits from the parent $scope - in this case the appController scope.<p>
+        <p>Which is why $scope.message matches what we saw on the home page is initally and matches $parent.message shown below.</p>
+    </div>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        $parent.message:
+        <strong><span ng-bind="$parent.message"></span></strong>
+    </div>
+    <div class="panel-body">
+        <p>Click the button to set $scope.message to something new. Notice the message above change!</p>
+        <button class="btn btn-danger" ng-click="overrideMessage()">OVERRIDE</button>
+        <p><strong>BUT</strong> the parent's scope message does not! This is prototypal inheritance in a nut shell - I can read, but not write.</p>
+        <p>Also notice when you refresh the page, the controller is reloaded. Good as new!</p>
+    </div>
+</div>
+

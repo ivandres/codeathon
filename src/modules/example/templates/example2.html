@@ -1,0 +1,12 @@
+<h3 ng-bind="message"></h3>
+
+<div class="well">
+    <p>One very useful directive provided by Angular is ng-repeat. Check it out!</p>
+    <ul>
+        <li ng-repeat="name in list">{{name}}</li>
+    </ul>
+    <div>
+        <input id="new" type="text" ng-model="new"  size="30"
+               placeholder="add new item here" ng-keyup="add()"/>
+    </div>
+</div>
