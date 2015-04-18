@@ -5,15 +5,20 @@
 <div ng-show="tab.isSet(1)"> <!-- (3) Use the isSet method to show the corresponding tab. You'll need to add a directive to each of the <div> elements in .tab.-->
     <div ng-include="'modules/app/templates/wizard/home.html'"></div>
 </div>
-<div ng-show="tab.isSet(2)">
-    <div ng-include="'modules/app/templates/wizard/start.html'"></div>
-</div>
-<div ng-show="tab.isSet('healthPlan')">
-	<h4>Reviews</h4>
+<div ng-show="tab.isSet('step2')">
+    <div ng-include="'modules/app/templates/wizard/step2.html'"></div>
 </div>
 
-<div ng-show="tab.isSet('dentalPlan')">
-    <h4>Reviews</h4>
+<div ng-show="tab.isSet('step3')">
+    <div ng-include="'modules/app/templates/wizard/step3.html'"></div>
+</div>
+
+<div ng-show="tab.isSet('step4')">
+    <div ng-include="'modules/app/templates/wizard/step4.html'"></div>
+</div>
+
+<div ng-show="tab.isSet('step5')">
+    <div ng-include="'modules/app/templates/wizard/step5.html'"></div>
 </div>
 </section>
 

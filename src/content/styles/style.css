@@ -8,7 +8,7 @@ body {
 }
 
 .padding50 {
-    padding: 50px;
+    padding: 60px;
 }
 
 /* images */
@@ -21,6 +21,21 @@ body {
     height: 387px;
 }
 
+.heading-blue {
+    padding: 10px 30px;
+    background-color: #188CCC;
+    color: white;
+    margin-left: 8px;
+}
 .heading-orange {
-
+    padding: 10px 30px;
+    background-color: #F68621;
+    color: white;
+    margin-left: 8px;
+}
+.heading-green {
+    padding: 10px 30px;
+    background-color: #39B54A;
+    color: white;
+    margin-left: 8px;
 }
