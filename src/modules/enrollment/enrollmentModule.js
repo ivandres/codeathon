@@ -11,20 +11,22 @@ angular.module('enrollment', ['ngRoute'])
 
     .controller('enrollmentController', function($scope, enrollmentService) {
         //The service returns a promise.
-        
-        $scope.message = "Click on the checkboxes to call sample data sets!";
-        
-        
+
+        $scope.message = "Discover the different insurance plans Cigna offers!";
+
+
+
         enrollmentService.getHealthPlanData().then(
             function(data) {
                 $scope.healthData = data;
+
             }
         );
 
         enrollmentService.getDentalDPPOData().then(
             function(data) {
                 $scope.dentalPPOData = data;
-            }
+1            }
         );
         enrollmentService.getDentalDHMOData().then(
             function(data) {
@@ -33,9 +35,9 @@ angular.module('enrollment', ['ngRoute'])
         );
 
     })
-    
 
-    
+
+
     .service('enrollmentService', function($http, $q){
         var enrollmentService = {
             getHealthPlanData: function() {
@@ -65,8 +67,5 @@ angular.module('enrollment', ['ngRoute'])
         };
         return enrollmentService;
     }
+
 );
-
-
-
-

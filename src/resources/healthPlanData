@@ -1,5 +1,5 @@
 {
-  "Open Access Plus - No Deductible": {
+  "OAP": {
     "In-Network": {
       "Physician": {
         "individual": 20,
@@ -88,7 +88,7 @@
       }
     }
   },
-  "Open Access Plus - 1500 Deductible": {
+  "OAPD": {
     "In-Network": {
       "Physician": {
         "individual": 25,
@@ -173,7 +173,7 @@
       }
     }
   },
-  "Open Access Plus In-Network Only - 1500 Deductible": {
+  "OAPDIN": {
     "In-Network": {
       "Physician": {
         "individual": 25,
