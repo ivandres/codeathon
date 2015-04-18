@@ -1,39 +1,12 @@
-
 <section ng-controller="TabController as tab">
-<!--
-<button class="btn btn-primary"  ng-click="tab.setTab(2)">Learn More</button>
-<button class="btn btn-primary"  ng-click="tab.setTab(3)">Learn More</button>
--->
+
 
 
 <div ng-show="tab.isSet(1)"> <!-- (3) Use the isSet method to show the corresponding tab. You'll need to add a directive to each of the <div> elements in .tab.-->
-    <wizard-home></wizard-home>
+    <div ng-include="'modules/app/templates/wizard/home.html'"></div>
 </div>
 <div ng-show="tab.isSet(2)">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="wizard-box">
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="content/images/wizard1.png"/>
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="padding50">
-                            <h2>Let's begin!</h2>
-                            <p class="lead">
-                                What plan are you looking for?
-                                <br/><br/>
-                                <button class="btn btn-primary"  ng-click="tab.setTab('healthPlan')">Health</button>
-                                <button class="btn btn-primary"  ng-click="tab.setTab('dentalPlan')">Dental</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    <div ng-include="'modules/app/templates/wizard/start.html'"></div>
 </div>
 <div ng-show="tab.isSet('healthPlan')">
 	<h4>Reviews</h4>

@@ -1,3 +1,7 @@
+body {
+
+}
+
 .wizard-box {
     border: 1px solid #ccc;
     box-shadow: 5px 5px 5px #ccc;
@@ -15,4 +19,8 @@
     -o-background-size: 100% auto;
     background-size: 100% auto;
     height: 387px;
+}
+
+.heading-orange {
+
 }

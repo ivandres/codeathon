@@ -21,12 +21,6 @@ angular
             controller: 'example2Controller'
         });
     }])
-    .directive("wizardHome", function() {
-        return {
-            restrict: "E", // elements
-            templateUrl: "wizard/wizard-home.html"
-        };
-    })
     .controller('appController', function($scope) {
         $scope.message = "This is your home page.";
     })
