@@ -1,32 +1,141 @@
 <h3 ng-bind="message"></h3><br>
-
 <div class="input-group">
    <span class="input-group-addon">
-      <input type="checkbox" ng-model="healthDataCheck">
+      <input type="checkbox" ng-model="Medical">
    </span>
-      <input type="text" class="form-control"placeholder="Health Data" aria-label="...">
+      <input type="text" class="form-control"placeholder="Medical Insurance" aria-label="...">
+   <span class="input-group-addon">
+      <input type="checkbox" ng-model="Dental">
+   </span>
+      <input type="text" class="form-control"placeholder="Dental Insurance" aria-label="...">
+  </div><!-- /input-group -->
+<div class="input-group" ng-show="Medical">
+   <span class="input-group-addon">
+      <input type="checkbox" ng-model="OAPDataCheck">
+   </span>
+      <input type="text" class="form-control"placeholder="Medical Open Access Plus Plan" aria-label="...">
+   <span class="input-group-addon">
+      <input type="checkbox" ng-model="OAPDDataCheck">
+   </span>
+      <input type="text" class="form-control"placeholder="Medical Open Access Plus w/ Deductable Plan" aria-label="...">
+   <span class="input-group-addon">
+      <input type="checkbox" ng-model="OAPDINDataCheck">
+   </span>
+      <input type="text" class="form-control"placeholder="Medical Open Access Plus In-Network Only Plan" aria-label="...">
+</div><!-- /input-group -->
+<div class="input-group" ng-show="Dental">
    <span class="input-group-addon">
       <input type="checkbox" ng-model="dentalPPODataCheck">
    </span>
-      <input type="text" class="form-control"placeholder="Dental PPO Data" aria-label="...">
+      <input type="text" class="form-control"placeholder="Dental PPO Plan" aria-label="...">
    <span class="input-group-addon">
       <input type="checkbox" ng-model="dentalDHMODataCheck">
    </span>
-      <input type="text" class="form-control"placeholder="Dental DHMO Data" aria-label="...">
+      <input type="text" class="form-control"placeholder="Dental DHMO Plan" aria-label="...">
 </div><!-- /input-group -->
 
-
-<div class="check-element animate-hide" ng-show="healthDataCheck">
- 	{{healthData | json}}
+<div class="check-element animate-hide" ng-hide="Dental">
+  <table width="100%"><tr>
+ <td ng-show="Medical"><b>Benefit Provisions</b></td>
+ <td ng-show="OAPDataCheck"><b>In-Network</b></td>
+ <td ng-show="OAPDataCheck"><b>Non-Network</b></td>
+ <td ng-show="OAPDDataCheck"><b>In-Network</b></td>
+ <td ng-show="OAPDDataCheck"><b>Non-Network</td>
+ <td ng-show="OAPDINDataCheck"><b>In-Network</b></td>
+</tr><tr>
+ <td ng-show="Medical">Physician's Office Visit</td>
+ <td ng-show="OAPDataCheck">$20/40</td>
+ <td ng-show="OAPDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDDataCheck">$25/$50</td>
+ <td ng-show="OAPDDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDINDataCheck">$25/$50</td>
+ </tr><tr>
+ <td ng-show="Medical">Plan Deductible</td>
+ <td ng-show="OAPDataCheck">$20/40</td>
+ <td ng-show="OAPDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDDataCheck">$25/$50</td>
+ <td ng-show="OAPDDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDINDataCheck">$25/$50</td>
+</tr><tr>
+ <td ng-show="Medical">Plan Coinsurance</td>
+ <td ng-show="OAPDataCheck">100%</td>
+ <td ng-show="OAPDataCheck">80%</td>
+ <td ng-show="OAPDDataCheck">80%</td>
+ <td ng-show="OAPDDataCheck">60%</td>
+ <td ng-show="OAPDINDataCheck">80%</td>
+</tr ><tr>
+ <td ng-show="Medical">Plan Out-of-Pocket</td>
+ <td ng-show="OAPDataCheck">$500 Individual/$1,00 Family</td>
+ <td ng-show="OAPDataCheck">$1,000 Individual/$2,000 Family</td>
+ <td ng-show="OAPDDataCheck">$3,000 Individual/$6,000 Family</td>
+ <td ng-show="OAPDDataCheck">$6,000 Individual/$12,000 Family</td>
+ <td ng-show="OAPDINDataCheck">$3,000 Individual/$6,000 Family</td>
+</tr><tr>
+ <td ng-show="Medical">Preventive Care Services</td>
+ <td ng-show="OAPDataCheck">100%</td>
+ <td ng-show="OAPDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDDataCheck">$3,000 Individual/$6,000 Family</td>
+ <td ng-show="OAPDDataCheck">$6,000 Individual/$12,000 Family</td>
+ <td ng-show="OAPDINDataCheck">$3,000 Individual/$6,000 Family</td>
+</tr><tr>
+ <td ng-show="Medical">Inpatient Facility</td>
+ <td ng-show="OAPDataCheck">$250 per admission then 100%</td>
+ <td ng-show="OAPDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDINDataCheck">Deductible/Coinsurance</td>
+</tr><tr>
+ <td ng-show="Medical">Outpatient Facility</td>
+ <td ng-show="OAPDataCheck">$125 per admission then 100%</td>
+ <td ng-show="OAPDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDDataCheck">Deductible/Coinsurance</td>
+ <td ng-show="OAPDINDataCheck">Deductible/Coinsurance</td>
+</tr><tr>
+ <td ng-show="Medical">Urgent Care (Deductible does not apply unless specified)</td>
+ <td ng-show="OAPDataCheck">$50</td>
+ <td ng-show="OAPDataCheck">$50</td>
+ <td ng-show="OAPDDataCheck">$75</td>
+ <td ng-show="OAPDDataCheck">$75</td>
+ <td ng-show="OAPDINDataCheck">$75</td>
+</tr><tr>
+ <td ng-show="Medical">Emergency Room (Deductible does not apply unless specified)</td>
+ <td ng-show="OAPDataCheck">$100</td>
+ <td ng-show="OAPDataCheck">$100</td>
+ <td ng-show="OAPDDataCheck">$150</td>
+ <td ng-show="OAPDDataCheck">$150</td>
+ <td ng-show="OAPDINDataCheck">$150</td>
+</tr></table>
 </div>
 
 <div class="check-element animate-hide" ng-show="dentalPPODataCheck">
  	{{dentalPPOData | json}}
 </div>
 
-<div class="check-element animate-hide" ng-show="dentalDHMODataCheck">
- 	{{dentalDHMOData | json}}
+<div class="check-element animate-hide" ng-show="dentalDHMODataCheck" ng-hide="Medical">
+<table><tr>
+  <td ng-show="dentalDHMODataCheck"><b>DHMO Plan</b></td>
+  <td ng-show="dentalDHMODataCheck"><b>In-Network Only</b></td></tr>
+  <tr><td ng-show="dentalDHMODataCheck">Patient Charge Schedule</td>
+    <td ng-show="dentalDHMODataCheck">K1-V9</td></tr>
+    <tr><td ng-show="dentalDHMODataCheck">Office Copayment</td>
+      <td ng-show="dentalDHMODataCheck">$5</td></tr>
+      <tr><td ng-show="dentalDHMODataCheck">Coinsurance Equivalency</td>
+        <td ng-show="dentalDHMODataCheck">100/80/50/50</td></tr>
+        <tr><td ng-show="dentalDHMODataCheck">Annual Deductible(Individual/Family)</td>
+          <td ng-show="dentalDHMODataCheck">N/A</td></tr>
+          <tr><td ng-show="dentalDHMODataCheck">Annual Maximum Benifits(Excludes Orthodontia)</td>
+            <td ng-show="dentalDHMODataCheck">N/A</td></tr>
+            <tr><td ng-show="dentalDHMODataCheck">Lifetime Benefit Maximum (Excludes Orthodontia)</td>
+              <td ng-show="dentalDHMODataCheck">N/A</td></tr>
+              <tr><td ng-show="dentalDHMODataCheck">Lifetime Orthodontia Benefit Maximum (IN/OON)</td>
+                <td ng-show="dentalDHMODataCheck">N/A</td></tr>
+                <tr><td ng-show="dentalDHMODataCheck">Orthodontia Benefit Child and Adult</td>
+                  <td ng-show="dentalDHMODataCheck">Covered</td></tr>
+                  <tr><td ng-show="dentalDHMODataCheck">Implants</td>
+                    <td ng-show="dentalDHMODataCheck">No</td></tr>
+                    <tr><td ng-show="dentalDHMODataCheck">TMJ</td>
+                      <td ng-show="dentalDHMODataCheck">Covered</td></tr>
+</table>
+  {{dentalDHMOData | json}}
 </div>
-
-
-
