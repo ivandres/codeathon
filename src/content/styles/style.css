@@ -1,3 +1,18 @@
-.class {
-    /* Notice there is no custom css yet! Everything is Bootstrap!*/
+.wizard-box {
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.padding50 {
+    padding: 50px;
+}
+
+/* images */
+.bg1 {
+    background: url('../../content/images/wizard1.png') no-repeat;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    height: 387px;
 }

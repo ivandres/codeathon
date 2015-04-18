@@ -19,6 +19,9 @@ angular
         }).when('/example2', {
             templateUrl: 'modules/app/templates/example2.html',
             controller: 'example2Controller'
+        }).when('/wizard', {
+            templateUrl: 'modules/app/templates/wizard.html',
+            controller: 'wizardController'
         });
     }])
     .controller('appController', function($scope) {
@@ -91,6 +94,9 @@ angular
         $scope.openMvc = function(){
             $modal({scope:$scope, template:'modules/app/templates/mvcinfo.html', show:true});
         };
+    })
+
+    .controller('wizardController', function($scope, $modal){
     }
 );
 
