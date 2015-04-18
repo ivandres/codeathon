@@ -6,14 +6,10 @@
       .mobile_banner {
 	width:100%;
       }
-	.fill {
-	.padding50 {
-	    padding: 0px;
-	}	
-		width:100vw;
-		height:50vh;
-	}
+    .padding50 {
+        padding: 0px;
     }
+}
 
 .wizard-box {
     border: 1px solid #ccc;
@@ -58,8 +54,7 @@
     color: white;
     margin-left: 8px;
 }
-<<<<<<< HEAD
-=======
+
 .heading-blue-dark {
     padding: 10px 30px;
     background-color: #004986;
@@ -93,4 +88,4 @@
 .green {
     color: #39B54A;
 }
->>>>>>> 778fe39123a9c0258cb8b4d03be4b40c519de35c
+
