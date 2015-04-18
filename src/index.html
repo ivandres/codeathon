@@ -27,7 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.2.1/angular-strap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.2/angular-strap.tpl.min.js"></script>
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <!--load your modules-->
     <script src="modules/app/AppModule.js"></script>
     <script src="modules/enrollment/enrollmentModule.js"></script>
@@ -35,23 +35,19 @@
 
 <body>
 <div ng-controller="appController" class="container">
-
-
-    <div class="container" style="padding-top:10px;" >
-        <div class="masthead">
-            <img src="content/images/logo-cigna.jpg">
-        </div>
+    <div style="padding-top:10px;" class="container">
 
         <nav class="navbar navbar-default" role="navigation" bs-navbar>
+            <div class="navbar-header">
+                <img class="navbar-brand" src="content/images/logo-cigna.jpg">
+            </div>            
             <ul class="nav navbar-nav">
                 <li><a href="#/">Home</a></li>
                 <li><a href="#/example1">Learn More </a></li>
-                <li><a href="#/enrollment">Coverage Plans</a></li>
+                <li><a href="#/enrollment" >Coverage and Plans</a></li>
         		</ul>
         </nav>
-        
         <div class="main-view" ng-view></div>
-        <br/><br/><br/><br/>
         <!--This is where angular will add in the correct html partial and bind it to the controller-->
         <!--based off the routes in the config-->
     </div>

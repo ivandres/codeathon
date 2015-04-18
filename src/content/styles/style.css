@@ -1,6 +1,6 @@
 
 @media (max-width: 700px) {
-      .navbar,img:not(.mobile_banner),.noshow{
+      img:not(.mobile_banner),.noshow{
         display:none;
       }
       .mobile_banner {
