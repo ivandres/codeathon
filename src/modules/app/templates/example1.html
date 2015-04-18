@@ -1,24 +1,152 @@
-<div class="panel panel-danger">
-    <div class="panel-heading">
-        $scope.message:
-        <strong><span ng-bind="message"></span></strong>
-    </div>
-    <div class="panel-body">
-        <p>The $scope of this controller prototypally inherits from the parent $scope - in this case the appController scope.<p>
-        <p>Which is why $scope.message matches what we saw on the home page is initally and matches $parent.message shown below.</p>
-    </div>
+<div ng-controller="TabController as tab" class="container">
+	<div class="row">
+		<div class="col-md-2">
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation" ng-class="{ active:tab.isSet('health') }" ng-click="tab.setTab('health')"><a ng-click="tab.setTab('health')">Health Plan</a></li>
+				<li role="presentation" ng-class="{ active:tab.isSet('dental') }" ng-click="tab.setTab('dental')"><a ng-click="tab.setTab('dental')">Dental Plan</a></li>
+			</ul>
+		</div>
+	<div class="col-md-9">
+	<div ng-show="tab.isSet('health')">
+	<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Plan Deductible
+		</div>
+		<div class="panel-body">
+			<p>A specified amount of money that customer pays out-of-pocket for services received before a plan administrator (e.g. Cigna) will begin paying expenses. Applicable for multiple services covered withina plan.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Open Access Plan
+		</div>
+		<div class="panel-body">
+			<p>An Open Access Plan (OAP) is a product offer that includes both In & Out-of-Network coverage with access to Cigna's national seamless network.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Open Access Plan In Network
+		</div>
+		<div class="panel-body">
+			<p>An Open Acces	<div ng-show="tab.isSet('health')">
+s Plan In Network (OAPIN) is a product offer that includes In-Network coverage with access to Cigna's national seamless network only.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Co-Pay
+		</div>
+		<div class="panel-body">
+			<p>A dollar amount that a customer pays for an eligible health care or related service, typically due at the time the service is provided. When present it is usually applied per occurrence, per admission, per day or annual basis.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Co-Insurance
+		</div>
+		<div class="panel-body">
+			<p>Coinsurance is a cost sharing benefit feature between the insured (customer) and the insurer (Cigna) which represents their respective responsibility for a covered expense.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Out Of Pocket Max
+		</div>
+		<div class="panel-body">
+			<p>The total monetary amount an Insurer requires a Customer to pay towards the cost of their healthcare (i.e., copays, coinsurance, deductibles and fees).</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Preventive Care
+		</div>
+		<div class="panel-body">
+			<p>Preventive Care is a sort of comprehensive care emphasizing priorities for prevention, earlydetection and early treatment of conditions, generally including routine physical examination and immunizations.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Inpatient Facilty
+		</div>
+		<div class="panel-body">
+			<p>Inpatient facilities are institutions that provide medical, surgical, or psychiatric care and treatment for the sick or the injured that typically requires an overnight stay.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Outpatient Facilty
+		</div>
+		<div class="panel-body">
+			<p>A specified amount of money that customer pays out-of-pocket for services received before a plan administrator (e.g. Cigna) will begin paying expenses. Applicable for multiple services covered withina plan.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Plan Deductible
+		</div>
+		<div class="panel-body">
+			<p>Outpatient Facilities are hospitals or free-standing facilities that provide Health Care Services, but do not require an overnight stay.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Urgent Care
+		</div>
+		<div class="panel-body">
+			<p>A service included in a medical benefit plan for the immediate treatment of a non-life threatening illness, injury or condition that is serious or deemed to be serious by the customer seeking care.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Emergency Service
+		</div>
+		<div class="panel-body">
+			<p>A service included in a medical benefit plan for the immediate treatment of a life threatening illness, injury or condition that is serious in nature, or deemed to be serious by the customer seeking care.</p>
+		</div>
 </div>
-
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        $parent.message:
-        <strong><span ng-bind="$parent.message"></span></strong>
-    </div>
-    <div class="panel-body">
-        <p>Click the button to set $scope.message to something new. Notice the message above change!</p>
-        <button class="btn btn-danger" ng-click="overrideMessage()">OVERRIDE</button>
-        <p><strong>BUT</strong> the parent's scope message does not! This is prototypal inheritance in a nut shell - I can read, but not write.</p>
-        <p>Also notice when you refresh the page, the controller is reloaded. Good as new!</p>
-    </div>
 </div>
-
+</div>
+	<div ng-show="tab.isSet('dental')">
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Dental Preferred Provider Organization
+		</div>
+		<div class="panel-body">
+			<p>A Dental Preferred Provider Organization is a plan that accesses a broad national network ofdentists who agree to discounts for In-Network coverage; and also provides for Out-of-Network coverage.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Deductible
+		</div>
+		<div class="panel-body">
+			<p>A specified amount of money that customer pays out-of-pocket for services received before a plan administrator (e.g. Cigna) will begin paying expenses. Applicable for multiple services covered withina plan.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Annual Max
+		</div>
+		<div class="panel-body">
+			<p>The total amount a plan will pay for any covered/applicable expense within a specified benefit accumulation period.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: DHMO
+		</div>
+		<div class="panel-body">
+			<p>A type of dental plan that provides the most active management of the oral health of individual customers through the use of primary care dentists customarily combined with requirements for authorized referrals to specialists.</p>
+		</div>
+	</div>
+		<div class="panel panel-success">
+		<div class="panel-heading">
+			Vocabulary: Patient Charge Schedule
+		</div>
+		<div class="panel-body">
+			<p>One of many schedules with multiple copay structures that are used with the CIGNA Dental Health Maintenance Organization (DHMO) plans.</p>
+		</div>
+	</div>
+</div>
+</div>
