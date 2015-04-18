@@ -16,6 +16,9 @@ angular
         }).when('/example1', {
             templateUrl: 'modules/app/templates/example1.html',
             controller: 'example1Controller'
+        }).when('/prices', {
+            templateUrl: 'modules/app/templates/prices.html',
+            controller: 'pricesController'
         }).when('/example2', {
             templateUrl: 'modules/app/templates/example2.html',
             controller: 'example2Controller'
@@ -35,6 +38,12 @@ angular
 		this.tab = setTab;
 		};
 	})
+
+    .controller('pricesController', function($scope) {
+        $scope.overrideMessage = function () {
+            $scope.message = "Hello from the example 1 partial, controller by controller 1!";
+        }
+    })
 
     .controller('example1Controller', function($scope) {
         $scope.overrideMessage = function () {
