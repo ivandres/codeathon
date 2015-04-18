@@ -24,7 +24,18 @@ angular
     .controller('appController', function($scope) {
         $scope.message = "This is your home page.";
     })
-    
+    .controller("TabController", function() {
+		this.tab = 1;
+
+		this.isSet = function(checkTab) {
+			return this.tab === checkTab;
+		};
+
+		this.setTab = function(setTab) {
+		this.tab = setTab;
+		};
+	})
+
     .controller('example1Controller', function($scope) {
         $scope.overrideMessage = function () {
             $scope.message = "Hello from the example 1 partial, controller by controller 1!";
@@ -68,6 +79,7 @@ angular
             }
         };
         })
+       
 
     .controller('homeController', function($scope, $modal){
         $scope.openBootstrap = function(){
