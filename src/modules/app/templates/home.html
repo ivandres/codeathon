@@ -1,13 +1,17 @@
+<div ng-controller="searchController">
+<form novalidate>
 <div class="quick-search">
 <span class="green"><img src="content/icons/Objects_Icons/green/png/Cigna_icon_chat-green.png" width="40px"> Quick Search</span>
 </div>
 <div class="box-gradient-green radius-5" style="padding: 10px;margin-bottom: 20px;">
     <div class="input-group input-group-lg">
-        <input type="text" class="search-box form-control input-lg" name="value" placeholder="Find the best option for you..." value="">
-					<span class="input-group-btn">
-						<button class="search-box-button btn btn-primary btn-lg" type="submit"><i class="fa fa-search"></i></button>
-					</span>
+        <input type="text" class="search-box form-control input-lg" name="value" ng-model="search.value" placeholder="Find the best option for you..." value="">
+        <span class="input-group-btn">
+            <button class="search-box-button btn btn-primary btn-lg" type="submit" ng-click="update(search)"><i class="fa fa-search"></i></button>
+        </span>
     </div>
+</div>
+</form>
 </div>
 
 <section ng-controller="TabController as tab">

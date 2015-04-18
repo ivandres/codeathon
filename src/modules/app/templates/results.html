@@ -1,0 +1,43 @@
+<div class="modal am-fade-and-scale" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div ng-repeat="(key, value) in healthData">
+                <div class="modal-header">
+                    <h4 class="modal-title">{{ key }}</h4>
+                </div>
+                <div class="modal-body">
+                    <div ng-repeat="(k, v) in value">
+                        <table>
+                            <tr>
+                                <td><strong>{{ k }}</strong></td>
+                            </tr>
+                        </table>
+
+                            <div ng-repeat="(a, b) in v">
+                                <table class="table">
+                                <tr>
+                                    <td width="30%">
+                                        {{ a }}
+                                    </td>
+                                    <td>
+                                        <span ng-if="b.individual">Individual {{ b.individual}}/</span>
+                                        <span ng-if="b.family">Family {{ b.family}}</span>
+                                        <span ng-if="b.text">{{ b.value}}</span>
+                                        <span ng-if="b.text">({{ b.text}})</span>
+                                    </td>
+                                </tr>
+                                </table>
+                            </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

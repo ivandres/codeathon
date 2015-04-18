@@ -44,7 +44,30 @@ angular
             $scope.message = "Hello from the example 1 partial, controller by controller 1!";
         }
     })
+    .controller('searchController', function($scope, $modal, enrollmentService) {
+        enrollmentService.getHealthPlanData().then(
+            function(data) {
+                $scope.healthData = data;
+            }
+        );
 
+        $scope.update = function(search) {
+            $scope.results = [];
+
+            for (var category in $scope.healthData ) {
+                for (var network in $scope.healthData[category]) {
+                    for (var plan in $scope.healthData[category][network]) {
+                        if (plan.toLowerCase().indexOf(search.value) == -1) {
+                            delete $scope.healthData[category][network][plan];
+                        }
+                    }
+                }
+            }
+            $modal({scope:$scope, template:'modules/app/templates/results.html', show:true});
+
+        };
+
+    })
     .controller('example1Controller', function($scope) {
         $scope.overrideMessage = function () {
             $scope.message = "Hello from the example 1 partial, controller by controller 1!";
@@ -88,8 +111,36 @@ angular
             }
         };
         })
-       
 
+    .service('searchService', function($http, $q){
+        var searchService = {
+            getHealthPlanData: function() {
+
+                var deferred = $q.defer();
+                $http.get('resources/healthPlanData').success(function(data) {
+                    deferred.resolve(data);
+                });
+                return deferred.promise;
+            },
+            getDentalDPPOData: function() {
+
+                var deferred = $q.defer();
+                $http.get('resources/dentalPPOData').success(function(data) {
+                    deferred.resolve(data);
+                });
+                return deferred.promise;
+            },
+            getDentalDHMOData: function() {
+
+                var deferred = $q.defer();
+                $http.get('resources/dentalDHMOData').success(function(data) {
+                    deferred.resolve(data);
+                });
+                return deferred.promise;
+            }
+        };
+        return searchService;
+    })
     .controller('homeController', function($scope, $modal){
         $scope.openBootstrap = function(){
             $modal({scope:$scope, template:'modules/app/templates/bootstrapinfo.html', show:true});
