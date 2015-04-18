@@ -112,6 +112,30 @@
  	{{dentalPPOData | json}}
 </div>
 
-<div class="check-element animate-hide" ng-show="dentalDHMODataCheck">
- 	{{dentalDHMOData | json}}
+<div class="check-element animate-hide" ng-show="dentalDHMODataCheck" ng-hide="Medical">
+<table><tr>
+  <td ng-show="dentalDHMODataCheck"><b>DHMO Plan</b></td>
+  <td ng-show="dentalDHMODataCheck"><b>In-Network Only</b></td></tr>
+  <tr><td ng-show="dentalDHMODataCheck">Patient Charge Schedule</td>
+    <td ng-show="dentalDHMODataCheck">K1-V9</td></tr>
+    <tr><td ng-show="dentalDHMODataCheck">Office Copayment</td>
+      <td ng-show="dentalDHMODataCheck">$5</td></tr>
+      <tr><td ng-show="dentalDHMODataCheck">Coinsurance Equivalency</td>
+        <td ng-show="dentalDHMODataCheck">100/80/50/50</td></tr>
+        <tr><td ng-show="dentalDHMODataCheck">Annual Deductible(Individual/Family)</td>
+          <td ng-show="dentalDHMODataCheck">N/A</td></tr>
+          <tr><td ng-show="dentalDHMODataCheck">Annual Maximum Benifits(Excludes Orthodontia)</td>
+            <td ng-show="dentalDHMODataCheck">N/A</td></tr>
+            <tr><td ng-show="dentalDHMODataCheck">Lifetime Benefit Maximum (Excludes Orthodontia)</td>
+              <td ng-show="dentalDHMODataCheck">N/A</td></tr>
+              <tr><td ng-show="dentalDHMODataCheck">Lifetime Orthodontia Benefit Maximum (IN/OON)</td>
+                <td ng-show="dentalDHMODataCheck">N/A</td></tr>
+                <tr><td ng-show="dentalDHMODataCheck">Orthodontia Benefit Child and Adult</td>
+                  <td ng-show="dentalDHMODataCheck">Covered</td></tr>
+                  <tr><td ng-show="dentalDHMODataCheck">Implants</td>
+                    <td ng-show="dentalDHMODataCheck">No</td></tr>
+                    <tr><td ng-show="dentalDHMODataCheck">TMJ</td>
+                      <td ng-show="dentalDHMODataCheck">Covered</td></tr>
+</table>
+  {{dentalDHMOData | json}}
 </div>
