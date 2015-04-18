@@ -19,11 +19,14 @@ angular
         }).when('/example2', {
             templateUrl: 'modules/app/templates/example2.html',
             controller: 'example2Controller'
-        }).when('/wizard', {
-            templateUrl: 'modules/app/templates/wizard.html',
-            controller: 'wizardController'
         });
     }])
+    .directive("wizardHome", function() {
+        return {
+            restrict: "E", // elements
+            templateUrl: "wizard/wizard-home.html"
+        };
+    })
     .controller('appController', function($scope) {
         $scope.message = "This is your home page.";
     })
@@ -94,9 +97,6 @@ angular
         $scope.openMvc = function(){
             $modal({scope:$scope, template:'modules/app/templates/mvcinfo.html', show:true});
         };
-    })
-
-    .controller('wizardController', function($scope, $modal){
     }
 );
 
